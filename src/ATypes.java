@@ -1,7 +1,7 @@
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class Types
+public class ATypes
 {
     public static void main()
     {

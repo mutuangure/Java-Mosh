@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ControlFlow
+public class BControlFlow
 {
     public static void main(String[] args)
     {
