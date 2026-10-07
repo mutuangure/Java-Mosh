@@ -1,7 +1,7 @@
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class ExerciseCalculator
+public class Exercise1
 {
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
