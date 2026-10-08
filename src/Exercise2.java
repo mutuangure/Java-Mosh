@@ -12,7 +12,9 @@ public class Exercise2
 
         int principal = 0;
         float monthlyInterest = 0;
+        float annualInterest = 0;
         int numberOfPayments = 0;
+        byte years = 0;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -28,7 +30,7 @@ public class Exercise2
         while(true)
         {
             System.out.print("Annual Interest Rate(0< Rate <= 30): ");
-            float annualInterest = scanner.nextFloat();
+            annualInterest = scanner.nextFloat();
             if (annualInterest >= 1 && annualInterest <= 30) 
             {
                 monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
@@ -40,7 +42,7 @@ public class Exercise2
         while (true)
         {
             System.out.print("Period (0< Years <= 20): ");
-            byte years = scanner.nextByte();
+            years = scanner.nextByte();
             if (years >= 1 && years <= 20)
             {
                 numberOfPayments = PERCENT * MONTHS_IN_YEAR;
