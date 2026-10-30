@@ -1,3 +1,4 @@
+import Classes.Browser;
 import Classes.TextBox;
 import Classes.Employee;
 
@@ -17,7 +18,7 @@ public class Main
     static void main(String[] args)
     {
         //CREATING OBJECT
-        /*
+
         TextBox textBox1 = new TextBox(); //OR var textbox1 = new TextBox()
         textBox1.setText("Box 1");
         System.out.println(textBox1.text.toUpperCase());
@@ -30,6 +31,7 @@ public class Main
         textBox3.setText("Changes to textBox 1");
         System.out.println(textBox3.text);
 
+        /*
         //PROCEDURAL PROGRAMMING.
         int baseSalary = 50_000;
         int hourlyRate = 20;
@@ -49,15 +51,23 @@ public class Main
         //GETTERS & SETTERS.
         var employee = new Employee();
         employee.setBaseSalary(50_000);
-        employee.getBaseSalary();
+        //employee.getBaseSalary();
         employee.setHourlyRate(20);
-        employee.getHourlyRate();
+        //employee.getHourlyRate();
         int wage = employee.calculateWage(10);
 
         System.out.println(wage);
-         */
+        */
 
-        //ABSTRACTION.
+        //REDUCING COUPLING.
+        var browser = new Browser();
+        browser.navigate("Address for browser");
 
+        //CONSTRUCTORS & //STATIC METHOD
+        var employee = new Employee(50_000, 20);
+        System.out.println("\n" + Employee.numberOfEmployees); //static.
+        Employee.printNumberOfEmployees(); //Static method.
+        int wage = employee.calculateWage(10);
+        System.out.println("\n" + wage);
     }
 }
