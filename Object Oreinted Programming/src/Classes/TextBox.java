@@ -1,5 +1,6 @@
 package Classes;
 
+//CREATING CLASSES
 public class TextBox
 {
     public String text = ""; //Field
@@ -7,8 +8,4 @@ public class TextBox
     public void setText(String text) {
         this.text = text;
     }
-    public void clear() {
-        text = "";
-    }
-
 }
