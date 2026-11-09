@@ -4,10 +4,6 @@ public class UIControl
 {
     private boolean isEnabled =  true;
 
-    public UIControl(/* boolean isEnabled */) {
-        System.out.println("\n" + "UIControl");
-    }
-
     public void enable() {
         isEnabled = true;
     }
@@ -19,4 +15,17 @@ public class UIControl
     public boolean isEnabled() {
         return isEnabled;
     }
+
+    public UIControl() {
+        System.out.println("\nUIControl");
+    }
+
+    /*
+    //Constructor has parameter
+    public UIControl(boolean isEnabled) {
+        this.isEnabled = isEnabled;
+        System.out.println("\nUIControl");
+    }
+     */
+
 }
