@@ -5,7 +5,7 @@ public class Main {
     static void main(String[] args) {
         //Inheritance.
 
-        var control = new UIControl();  //Calling the default constructor.
+        var control = new UIControl(true);  //Calling the default constructor.
         control.disable();
         System.out.println(control.isEnabled());
 
@@ -21,18 +21,49 @@ public class Main {
         textBox1.setText("Overriding the method");
         System.out.println(textBox1);
 
-/*
-        //Upcasting & Down_casting.
-        var control1 = new UIControl( true);
+        //Upcasting & DownCasting.
+        var control1 = new UIControl(true);
         var textBox3 = new TextBox();
+        show(control1);
+
+
+        //Comparing Object.
+        var point1 = new Point(1, 2);
+        var point2 = new Point(1, 2);
+        System.out.println(point1 == point2);//false because there 2 reference types.
+        System.out.println(point1.equals(point2));
+
+        System.out.println(point1.equals(new TextBox()));
+
+        //Optimization technique
+        System.out.println(point1.equals(point1));
+
+        System.out.println(point1.hashCode());
+        System.out.println(point2.hashCode());
+
+        //Polymorphism
+        UIControl[] controls = {new TextBox(), new CheckBox()};
+        for (var control2 : controls) {
+            control.render();
+        }
+    }
+        /*
         show(textBox3);
     }
 
-    public static void show(UIControl control1) {
+    public static void show(UIControl control1) { //This is upcasting.
+        var textBox3 = (TextBox)control1; //DownCasting -> Try to cast to a specialize time
+        textBox3.setText("TextBox Hello");
         System.out.println(control1);
     }
-    */
+      */
 
+    //Upcasting & DownCasting.
+    public static void show(UIControl control1) { //This is upcasting.
+        if (control1 instanceof TextBox) { //We don't get error by casting to a specialized type.
+            var textBox3 = (TextBox) control1; //DownCasting -> Try to cast to a specialize time
+            textBox3.setText("TextBox Hello");
+        }
+        System.out.println(control1);
     }
-
 }

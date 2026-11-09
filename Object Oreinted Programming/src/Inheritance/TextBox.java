@@ -13,6 +13,7 @@ public class TextBox extends UIControl
     }
 
     public TextBox() {
+        super(true);
         System.out.println("TextBox");
     }
 
@@ -27,5 +28,11 @@ public class TextBox extends UIControl
     @Override //Overriding method
     public String toString() {
         return text;
+    }
+
+    //Polymorphism.
+    @Override
+    public void render() {
+        System.out.println("Render TextBox");
     }
 }

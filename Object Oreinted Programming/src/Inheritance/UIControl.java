@@ -16,10 +16,17 @@ public class UIControl
         return isEnabled;
     }
 
-    public UIControl() {
+    public UIControl(boolean b) {
         System.out.println("\nUIControl");
     }
+    public UIControl()
+    {
+        System.out.println("\nCheckBox");
+    }
 
+    public void render() {
+
+    }
     /*
     //Constructor has parameter
     public UIControl(boolean isEnabled) {
