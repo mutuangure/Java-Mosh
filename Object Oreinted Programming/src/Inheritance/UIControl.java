@@ -25,7 +25,7 @@ public class UIControl
     }
 
     public void render() {
-
+        System.out.println("Render UIControl");
     }
     /*
     //Constructor has parameter
