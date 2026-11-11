@@ -1,6 +1,6 @@
 package Interfaces;
 
-public class TaxCalculator
+public interface TaxCalculator
 {
-
+    public double calculateTax();
 }
