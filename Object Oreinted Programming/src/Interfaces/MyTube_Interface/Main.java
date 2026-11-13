@@ -6,12 +6,14 @@ public class Main {
         var video = new Video();
         video.setFileName("birthday.mp4");
         video.setTitle("Jennifer's birthday");
-        video.setUser(new User("john@domain.com"));
+        //video.setUser(new User("john@domain.com"));
+        video.setUser(new User(+254_123));
 
         var processor = new VideoProcessor(
             new XVideoEncoder(),
             new SqlVideoDatabase(),
-            new EmailService()
+            //new EmailService(),
+                new SmsServices()
         );
         processor.process(video);
     }
