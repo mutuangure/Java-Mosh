@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/Code.iml" filepath="$PROJECT_DIR$/Code.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/Object Oreinted Programming.iml" filepath="$PROJECT_DIR$/Object Oreinted Programming.iml" />
->>>>>>> 9620985f970ef71e9ad01254d43d89325d75bc4d
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
     </modules>
   </component>
 </project>
